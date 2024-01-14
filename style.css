@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #010e20 0%, #295ca5 72%, #010e20 100%);
+ }
+ .main-container{
+    width: 30rem;
+    padding: 20px 50px;
+    background-color: white;
+    box-shadow: 0 10px 21px black;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+ }
+ .main-container .heading{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 30px 0;
+ }
+ .input-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+ }
+ label{
+   font-size: 1.6rem;
+   text-transform:capitalize ;
+   color: #919191;
+   font-family: 'Courier New', Courier, monospace;
+   margin: 50px 0;
+   font-weight: 400;
+ }
+ .type , .degree{
+   width: 49%;
+   padding: 10px;
+ }
+ input , select{
+   width: 100%;
+   border: none;
+   outline: none;
+   border-bottom: 1.5px solid #e0e0e1;
+   font-size: 1.6rem;
+   color: #474747;
+   padding: 30px 0 10px 0;
+   text-transform: capitalize;
+ }
+ select option{
+   background-color: #092244;
+   color: white;
+ }
+ .result1{
+   width: 100%;
+   margin: 20px 0;
+ }
+ .result1 p{
+   border-bottom: 1.5px solid #e0e0e1;
+   font-size: 1.6rem;
+   color: rgb(24, 23, 23);
+   padding: 30px 0 10px 0;
+ }
+.convert{
+   width: 100%;
+}
+button{
+   width: 100%;
+   padding: 20px 0;
+   margin: 20px 0 10px 0;
+   outline: none;
+   border: none;
+   color: white;
+   background-color:rgba(3, 3, 56, 0.932) ;
+   border-radius: 20px;
+   text-transform: capitalize;
+   cursor: pointer;
+   font-size: 2rem;
+   background: radial-gradient(#010e20, #092244, #295ca5);
+   transition: 1s;
+   transition-delay: 0s, 1s;
+   overflow: hidden;
+   z-index: 1;
+   position: relative;
+}
+button::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -50px;
+   width: 0;
+   z-index: -1;
+   height: 100%;
+   background-color: #010e20;
+   transform: skewX(35deg);
+   transition: 1s;
+}
+button:hover::before{
+   width: 119%;
+}
+button:hover{
+  color: white;
+    box-shadow:0 0 10px 1px #010e20;
+}
+ 
